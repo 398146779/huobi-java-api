@@ -10,8 +10,30 @@
     <properties>
         <com.squareup.retrofit2.version>2.3.0</com.squareup.retrofit2.version>
     </properties>
-
+    <!-- 设定主仓库 -->
+    <!-- 自动打包 -->
+    <distributionManagement>
+        <repository>
+            <id>nexus-btctaxi-releases </id>
+            <url> http://btctaxi.online:8081/nexus/content/repositories/releases </url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://btctaxi.online:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>retrofit</artifactId>
