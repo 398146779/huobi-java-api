@@ -14,7 +14,7 @@
     <!-- 自动打包 -->
     <distributionManagement>
         <repository>
-            <id>nexus-btctaxi-releases </id>
+            <id>nexus-releases </id>
             <url> http://btctaxi.online:8081/nexus/content/repositories/releases </url>
         </repository>
         <snapshotRepository>
